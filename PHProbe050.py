@@ -43,9 +43,9 @@ print("In PH thats:", phfinal)
 
 #Temperature correction calculations
 
-float phDifference = abs(PH1-7)
-float tempDifferenceC = abs(temp-25)
-float phAdjust = (0.03*phDifference)*(tempDifferenceC/10)
+phDifference = abs(PH1-7)
+tempDifferenceC = abs(temp-25)
+phAdjust = (0.03*phDifference)*(tempDifferenceC/10)
 
 if (PH1>7 && temp<25)
    phAdjust=phAdjust
