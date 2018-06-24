@@ -47,16 +47,16 @@ float phDifference = abs(PH1-7)
 float tempDifferenceC = abs(temp-25)
 float phAdjust = (0.03*phDifference)*(tempDifferenceC/10)
 
-if (PH1>7 && temp<25)
+if PH1>7 and temp<25:
    phAdjust=phAdjust
    
-if (PH1>7 && temp>25)
+if PH1>7 and temp>25:
    phAdjust=phAdjust*-1
    
-if (PH1<7 && temp>25)
+if PH1<7 and temp>25:
    phadjust=phadjust
    
-if (PH1<7 && temp<25)
+if PH1<7 and temp<25:
    phadjust=phadjust*-1
    
 #output final calculations   
